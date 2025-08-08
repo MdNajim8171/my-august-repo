@@ -9,8 +9,8 @@ terraform {
     resource_group_name  = "RG-Najim"
     storage_account_name = "classicstorage89"
     container_name       = "test"
-    key                  = "dimag.tfstate"
-    
+    key                  = "${var.rg-name}.tfstate"
+
   }
 }
 
